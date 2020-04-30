@@ -6,7 +6,7 @@
 .debug [class*="col-"]{
   border: 1px solid green;
   background-color: pink;
-  height: 100px;
+  height: 500px;
 }
 .debug [class*="col-"] > .container{
   height: 100%
@@ -32,8 +32,8 @@
   max-width: 1170px;
   margin: 0 auto;
 }
-.container::after{
-  content: " ";
+.container:after{
+  content: "";
   display: table;
   clear: both;
 }
