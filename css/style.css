@@ -9,6 +9,7 @@ ul li:not(.item-list){
    display: inline-block;
 }
 hr{
+  width: 80%;
   margin: 0 auto;
 }
 .right-padding-25{
@@ -52,6 +53,11 @@ hr{
 }
 .max-width-800{
   max-width: 800px;
+}
+h1{
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 h2{
   font-size: 27px;
@@ -107,13 +113,6 @@ header .pitch{
   background-position: center;
   height: 450px;
   position: relative;
-}
-header .pitch h1{
-  font-size: 42px;
-  font-weight: 600;
-}
-header .pitch h1{
-  text-transform: capitalize;
 }
 header .pitch .teaser> * {
   margin-bottom: 15px;
@@ -184,7 +183,7 @@ main .where-find .vessel .box > *{
   padding: 20px;:
 }
 main .where-find .slogan .box{
-  height: 70px;
+  height: 200px;
   width: 210px;
   position: relative;
   left: 800px;
@@ -252,3 +251,74 @@ main .where-find .find-us .vessel{
     height: 200px;
   }
 /* FINE FOOTER */
+
+/* MEDIA QUERY */
+
+@media all and (max-width:767px) {
+  /* generali */
+  .right-padding-xs-25{
+    padding-right: 25px;
+  }
+  .left-padding-xs-25{
+    padding-left: 25px;
+  }
+  .bottom-margin-xs-25{
+    margin-bottom: 25px;
+  }
+  h1{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  h2{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  h4{
+    font-size: 14px;
+  }
+  hr{
+    width: 100%;
+  }
+  /* header */
+  header nav .burger{
+    text-align: right;
+  }
+  header .pitch .teaser img {
+    height: 30px;
+}
+  /* main */
+  main .service img {
+    height: 250px;
+  }
+  main .mechanism img {
+    height: 400px;
+    left: 25%;
+    bottom: 190px;
+  }
+  main .mechanism .banner {
+      background-size: 100%;
+      background-size: cover;
+      background-position: 21%;
+  }
+  main .mechanism .how-works [class*="col-"] {
+      height: 15px;
+  }
+  main .mechanism .how-works [class*="col-"]>*:not(p) {
+      margin-top: 20px;
+  }
+  main .where-find .slogan .box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  main .where-find .get-app .vessel{
+    background-position: -82px 125px;
+  }
+  /* footer */
+  footer .link {
+      padding: 10px 20px;
+  }
+
+}
