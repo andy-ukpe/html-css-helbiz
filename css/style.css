@@ -9,7 +9,7 @@ ul li:not(.item-list){
    display: inline-block;
 }
 hr{
-  width: 80%;
+  width: 94%;
   margin: 0 auto;
 }
 .right-padding-25{
@@ -80,7 +80,7 @@ nav{
   z-index: 2;
 }
 .menu{
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -179,14 +179,13 @@ main .where-find a{
   color: white;
 }
 main .where-find .vessel .box > *{
-  height: 50px;
-  padding: 20px;:
+  padding-top: 30px;
 }
 main .where-find .slogan .box{
   height: 200px;
   width: 210px;
   position: relative;
-  left: 800px;
+  left: 35%;
   top: 30%;
 }
 main .where-find .slogan .box>*{
@@ -321,4 +320,69 @@ main .where-find .find-us .vessel{
       padding: 10px 20px;
   }
 
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+  /* generali */
+  hr{
+    width: 95%;
+  }
+  .right-padding-md-10{
+    padding-right: 10px;
+  }
+  .left-padding-md-10{
+    padding-left: 10px;
+  }
+  .right-padding-md-50{
+    padding-right: 50px;
+  }
+  .left-padding-md-50{
+    padding-left: 50px;
+  }
+  /* header */
+  header nav .burger{
+    text-align: right;
+  }
+  /* main */
+  main .service img {
+    height: 250px;
+  }
+  main .mechanism{
+    height: 515px;
+  }
+  main .mechanism .banner {
+    background-position: 32%;
+    background-size: cover;
+  }
+  main .mechanism .how-works [class*="col-"] {
+      height: 15px;
+  }
+  main .mechanism .how-works [class*="col-"]>*:not(p) {
+      margin-top: 20px;
+  }
+  main .mechanism .how-works [class*="col-"] {
+     margin: 20px;
+  }
+  main .mechanism img {
+    height: 400px;
+    left: calc(100% / 3);
+    bottom: 90px;
+  }
+  main .where-find .slogan .box{
+    left: 30%;
+    top: 20%;
+  }
+  main .where-find [class*="col-"]{
+    height: 450px;
+  }
+  main .where-find .vessel .box > * {
+      padding-top: 13px;
+  }
+  main .where-find .vessel .box{
+    padding-top: 20px;
+  }
+  main .where-find .get-app .vessel {
+    background-size: 400px;
+    background-position: -47px 190px;
+  }
 }
