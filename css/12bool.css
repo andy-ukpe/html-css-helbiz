@@ -9,8 +9,8 @@
   height: 500px;
 }
 .debug [class*="col-"] > .container{
-  height: 100%
-  border:none;
+  height: 100%;
+  border: none;
 }
 .debug [class*="col-"] > .container [class*="col-"]{
   background-color: coral;

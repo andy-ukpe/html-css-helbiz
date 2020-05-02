@@ -283,6 +283,9 @@ main .where-find .find-us .vessel{
   header nav .burger{
     text-align: right;
   }
+  header .pitch ul li{
+    display: inherit;
+  }
   header .pitch .teaser img {
     height: 30px;
 }
