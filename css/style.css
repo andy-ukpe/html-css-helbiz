@@ -138,21 +138,13 @@ main .service .product>*{
 }
 
 /* mechanism */
-main .mechanism{
-  height: 600px;
-}
+
 main .mechanism .banner{
   height: 350px;
+  background-size: 100%;
   background-image: url(../img/bg/HelbizBanner.jpg);
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100%;
-}
-main .mechanism .how-works [class*="col-"]{
-  height: 200px;
-}
-main .mechanism .how-works [class*="col-"]>*:not(p){
-  margin-top: 100px;
+  background-size: cover;
 }
 main .mechanism{
   position: relative;
@@ -178,9 +170,7 @@ main .where-find [class*="col-lg"]{
 main .where-find a{
   color: white;
 }
-main .where-find .vessel .box > *{
-  padding-top: 30px;
-}
+
 main .where-find .slogan .box{
   height: 200px;
   width: 210px;
@@ -196,7 +186,6 @@ main .where-find .get-app .vessel{
   background-image: url(../img/HelbiZAPP.png);
   background-repeat: no-repeat;
   background-size: 700px;
-  background-position: -69px 125px
 }
 main .where-find .find-us .vessel{
   background-image: url(../img/bg/Cities-1500.jpg);
@@ -233,18 +222,12 @@ main .where-find .find-us .vessel{
   footer{
     background-color: #000000;
   }
-  footer .link{
-    padding: 100px 0;
-  }
   footer ul li{
     list-style-type: none;
     padding: 5px;
   }
   footer ul li a {
     text-decoration: none;
-  }
-  footer .news{
-    margin: 25px;
   }
   footer .app{
     height: 200px;
@@ -294,20 +277,12 @@ main .where-find .find-us .vessel{
     height: 250px;
   }
   main .mechanism img {
-    height: 400px;
+    height: 350px;
     left: 25%;
-    bottom: 190px;
+    bottom: 100px;
   }
   main .mechanism .banner {
-      background-size: 100%;
-      background-size: cover;
       background-position: 21%;
-  }
-  main .mechanism .how-works [class*="col-"] {
-      height: 15px;
-  }
-  main .mechanism .how-works [class*="col-"]>*:not(p) {
-      margin-top: 20px;
   }
   main .where-find .slogan .box{
       position: absolute;
@@ -355,7 +330,6 @@ main .where-find .find-us .vessel{
   }
   main .mechanism .banner {
     background-position: 32%;
-    background-size: cover;
   }
   main .mechanism .how-works [class*="col-"] {
       height: 15px;
@@ -387,5 +361,41 @@ main .where-find .find-us .vessel{
   main .where-find .get-app .vessel {
     background-size: 400px;
     background-position: -47px 190px;
+  }
+}
+@media all and (min-width:992px){
+  /* main */
+  main .mechanism{
+    height: 600px;
+  }
+  main .mechanism .banner{
+    height: 350px;
+    background-position: top;
+    background-size: 100%;
+  }
+  main .mechanism .how-works [class*="col-"]{
+    height: 200px;
+  }
+  main .mechanism .how-works [class*="col-"]>*:not(p){
+    margin-top: 100px;
+  }
+  main .mechanism .how-works [class*="col-"] {
+      height: 15px;
+  }
+  main .mechanism .how-works [class*="col-"]>*:not(p) {
+      margin-top: 20px;
+  }
+  main .where-find .get-app .vessel{
+    background-position: -69px 125px
+  }
+  main .where-find .vessel .box > *{
+    padding-top: 30px;
+  }
+  /* footer */
+  footer .link{
+    padding: 100px 0;
+  }
+  footer .news{
+    margin: 25px;
   }
 }
